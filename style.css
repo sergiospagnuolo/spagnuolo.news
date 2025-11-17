@@ -1,14 +1,14 @@
 :root {
-  --text-color: #333;
-  --bg-color: #fff;
-  --link-color-en: #f0027f;
-  --link-hover-en: #b22d65;
+  --text-color: oklch(0.25 0 0);
+  --bg-color: oklch(0.97 0.015 75);
+  --link-color-en: oklch(0.55 0.12 25);
+  --link-hover-en: oklch(0.25 0 0);
   --link-color-pt: #386cb0;
   --link-hover-pt: #2a5185;
   --link-color: var(--link-color-en);
   --link-hover: var(--link-hover-en);
   --section-spacing: 2.5rem;
-  --border-color: #e0e0e0;
+  --border-color: oklch(0.25 0 0);
 }
 
 * {
@@ -50,6 +50,11 @@ h1 {
   font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 0.5rem;
+}
+
+h1, h2, h3, h4, h5{
+  color: var(--text-color);
+  font-weight: 500;
 }
 
 .subtitle {
